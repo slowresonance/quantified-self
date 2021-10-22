@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+}
+
+body {
+  max-width: 100ch;
+  margin: 0 auto;
+  margin-top: 7.5em;
+  padding: 5ch;
+  background: var(--background-color);
+}
+
+#command {
+  font-size: 16px;
+  width: 60ch;
+  outline: none;
+  color: var(--button-text-color);
+  background-color: #0b0f14;
+}
+
+#command:active,
+#command:hover,
+#command:focus {
+  border-color: #555c65;
+}
+
+#command::placeholder {
+  color: #ffffff46;
+}
+
+:root {
+  --button-text-color: #c9d1d9;
+  --border-color: #30363d;
+  --background-color: #0d1117;
+}
+
+@keyframes change-opacity {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 0.7;
+  }
+}
+
+.change-opacity {
+  background: #36b077 !important;
+  animation-duration: 2s;
+  animation-name: change-opacity;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#circle {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+#quantified {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 5em;
+  transform: translate(-50%, 0);
+  border-radius: 5px;
+  border: 1px var(--border-color) solid;
+  align-items: center;
+  background-color: #0b0f14;
+
+  padding: 0 16px;
+  height: 45px;
+  gap: 12px;
+}
+
+#quantified:active,
+#quantified:hover,
+#quantified:focus {
+  border-color: #555c65;
+}
